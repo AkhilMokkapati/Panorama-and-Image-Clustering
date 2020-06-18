@@ -1,8 +1,10 @@
 # Warping, Matching, Stitching, Blending
 
-### Note: Codes and input images should be in the same folder while running the commands as mentioned in the Assignment-2 documents.
+### Note: Codes and input images should be in the same folder while running the commands
 
 ### Part 1: Image matching and clustering
+
+#### As cameras continue to pervade our lives, it is not an exaggeration to say that the world is drowning in visual data: consumers will take about 1.5 trillion photos this year alone, or roughly the same number that were taken in all of human history up to the year 2000. With so much visual data, we need tools to help people automatically organize their photos.
 
 Matching two images:
 - Extracted ORB feature keypoints of an image using OpenCV implementation
@@ -60,6 +62,8 @@ Notes to run part1 of code:
 
 ### Part 2: Image transformations
 
+
+
 #### Step-1: Warping image using given transformation matrix:
 -	Applies a given 3x3 transformation matrix to produce a corresponding warped image. 
 -	It uses inverse warping with bilinear interpolation to estimate pixel values in warped image.
@@ -82,7 +86,7 @@ Results on lincoln.jpg image using given transformation:
 |:-------------------------:|:-------------------------:|:-------------------------:|
 |<img width="2402" alt="Image 1" src="readme-images/book1.jpg"> Input image |  <img width="2402" alt="Image 2" src="readme-images/book2.jpg">Desired orientation|  <img width="2402" alt="Image 2" src="readme-images/book_output.jpg"> Output image|
 
-### Part 3: Automatic image matching and transformations
+### Part 3: Automatic image matching and transformations (Panorama)
 Design, specifications and assumptions: 
 -	The matching key points are obtained using the match function between two images.
 -	RANSAC algorithm is applied on matching key points to select the best hypothesis i.e transformation matrix with maximum inliers support.
